@@ -1,0 +1,432 @@
+/*
+Color pallet:
+
+#92374D - Solid Pink
+#8C5383 - Razzmic Berry
+#4A5899 - Liberty
+#559CAD - Pacific Blue
+#C1B2AB - Pale Silver
+#00BFFF - Deep Sky Blue
+#FAF0E6 - Linen
+#FDF5E6 - Oldlace
+
+*/
+
+/* Global Styles
+----------------------------------------   */
+
+body {
+  background:#FAF0E6;
+  color:#C1B2AB;
+  font-size: 25px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.username {
+  font-size: 20px;
+  font-style: italic;
+  color:white;
+}
+
+
+p.error {
+  font-size:30px;
+  color:#92374D;
+  text-align: center;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type='submit'], #update_bio_button {
+
+  padding:10px 30px;
+  background:#00BFFF;
+  border:none;
+  color:white;
+}
+
+
+.content-wrap {
+  /* max-width: 1000px; */
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* Header Syles
+---------------------------------------- */
+
+header {
+  background: #559CAD;
+  color:#FAF0E6 ;
+  padding:10px;
+  height:auto;
+}
+
+#title {
+  font-size:80px;
+  text-align:center;
+  margin-top:0;
+  margin-bottom: 0;
+
+}
+
+#login_button {
+  margin:0px;
+  text-align: right;
+}
+
+#navbar {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+#navbar {
+  list-style: none;
+  margin:0 auto;
+  padding-bottom: 10px;
+  width:100%;
+	height:40px;
+}
+
+#navbar ul {
+  padding-left: 0;
+}
+
+#navbar li {
+  list-style: none;
+  float:left;
+}
+
+#navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  padding:10px;
+  color:#E3D0D8;  /* Artichoke */
+}
+
+#navbar a:hover {
+  color:#AEA3B0; /* Opal */
+}
+
+#navbar a:active {
+}
+
+/* Home styles
+------------------------------------------ */
+
+#submitbutton {
+  float:Right;
+  margin-left: 10px;
+  padding:20px 40px;
+  background:#00BFFF;
+  border:none;
+  color:white;
+}
+
+#blogPost {
+  font-size: 20px;
+  width: 75%;
+}
+/* Form styles
+------------------------------------------ */
+
+form {
+  padding: 20px;
+  width:50%;
+  margin-top:30px;
+  background-color:#92374D;
+  align-items: center;
+}
+
+
+textarea {
+  height:50px;
+  width:500px;
+}
+
+
+.deleteButton {
+  margin-right: 75px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding:10px 20px;
+  background:#8C5383;
+  border:none;
+  color:white;
+}
+#prevPage {
+
+  padding:20px 40px;
+  background:#00BFFF;
+  border:none;
+  color:white;
+}
+
+#nextPage {
+  margin-left: 10px;
+  padding:20px 40px;
+  background:#00BFFF;
+  border:none;
+  color:white;
+}
+
+#navButtons {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Blog Entries
+--------------------------------------------*/
+.blog_content {
+/*  background:#FDF5E6;
+  color:black;
+  */
+  font-size:30px;
+  text-align:left;
+  line-height: 50px;
+  /*
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 250px;
+  margin-right:250px;
+  */
+}
+
+.blog_poster{
+  text-align: left;
+}
+
+
+.datetime {
+  font-size:20px;
+}
+
+
+
+img.profilepic {
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+
+}
+
+
+/* Edit page Info
+----------------------------------- */
+
+#profile_area form {
+  width:auto;
+}
+
+#profile_info {
+  background: #559CAD;
+  color:#FAF0E6;
+  padding-left: 20px;
+}
+
+
+#update_password {
+  display: flex;
+  flex-direction: column;
+}
+
+#bio_txt {
+  font-size: 20px;
+  width: 75%;
+}
+#update_bio {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#update_bio_button {
+
+  margin-top:10px;
+}
+
+/* Search page
+------------------------------------ */
+
+#searchform {
+  font-size:30px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#searchform input[type="text"] {
+  width:500px;
+  height:40px;
+  padding-right:0px;
+}
+
+/* Login page
+-------------------------------- */
+
+
+
+.registration_container label {
+  font-size:40px;
+  line-height: 0.5;
+  margin-bottom: 10px;
+}
+
+.registration_container input[type="text"], input[type="email"], input[type="password"] {
+  width:250px;
+  height:30px;
+  margin-bottom: 10px;
+}
+
+.registration_container input[type="date"] {
+   height:30px;
+   font-size: 20px;
+   margin-bottom: 10px;
+ }
+
+
+ #login_form label {
+   font-size:30px;
+ }
+
+ #login_form input[type="text"], input[type="password"] {
+   width:200px;
+   height:30px;
+ }
+
+ #login_button, #register_button {
+   float:left;
+   margin-left: 10px;
+   padding: 10px 20px;
+   background:#00BFFF;
+   border:none;
+   color:white;
+ }
+
+ #login_success p {
+   font-size: 30px;
+   color:#92374D;
+ }
+
+ /* Dynamic
+ -------------------------------- */
+ @media screen and (max-width:1590px){
+   h1 {
+     font-size: 30px;
+   }
+   .registration_container, #login_form {
+     background-color:#92374D;
+      padding:40px;
+   }
+
+   .registration_container label {
+     font-size:40px;
+     line-height: 0.5;
+     margin-bottom: 20px;
+   }
+
+   .registration_container input[type="text"], input[type="email"], input[type="password"] {
+     width:250px;
+     height:30px;
+     margin-top: 10px;
+   }
+
+   .registration_container input[type="date"] {
+      height:30px;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    #login_form {
+      background-color:#92374D;
+    }
+
+ }
+ @media screen and (min-width:1600px){
+   #profile_area {
+     display: grid;
+     width:75%;
+     grid-template-columns: 40% 60%;
+     column-gap: 50px;
+     margin-top: 20px;
+   }
+
+   .blog_area {
+     background:#FDF5E6;
+     color:black;
+     display: grid;
+     width:60%;
+     grid-template-columns: 25% 75%;
+     column-gap: 5px;
+     margin: 50px auto;
+     padding:15px;
+   }
+
+   .registration_container {
+     display: grid;
+     column-gap: 0;
+     grid-template-columns: 300px 1fr;
+     justify-content: center;
+     background-color:#92374D;
+     padding:30px;
+     width:40%;
+     margin-left: auto;
+     margin-right: auto;
+
+   }
+
+   #login_form {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     background-color:#92374D;
+     padding:30px;
+     width: 40%;
+   }
+
+   #post_blog {
+     display:flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+   #navbar {
+     display:flex;
+     justify-content: center;
+     margin-bottom: 10px;
+   }
+ }
+
+ @media screen and (max-width:849px){
+   #post_blog {
+     display:flex;
+     flex-wrap: wrap;
+     margin-bottom: 20px;
+   }
+
+   #navbar {
+     display:flex;
+     flex-direction: column;
+     flex-wrap:wrap;
+     justify-content: center;
+     margin-bottom: 10px;
+   }
+   .blog_area {
+     background:#FDF5E6;
+   }
+
+ }
