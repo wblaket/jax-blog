@@ -7,14 +7,14 @@
   <h1 id="title">Jax Blog</h1>
   <div id="navbar">
     <ul>
-      <li><a href="home.php">Home</a></li>
-      <li><a href="search_blogs.php">Search Posts</a></li>
-      <li><a href="edit_profile.php">View Profile</a></li>
-      <li><?php
-        if (isset($_SESSION['user_id'])) {
+      <?php
+        if (isset($_SESSION['user_id'])) { echo '
+        <br />
+        <li><a href="home.php">Home</a></li>
+        <li><a href="search_blogs.php">Search Posts</a></li>
+        <li><a href="edit_profile.php">View Profile</a></li>
+      <li>';
           echo '<a href="logout.php">Logout</a>';
-        } else {
-          echo '<a href="login.php">Login</a>';
         }
         ?></li>
     </ul>

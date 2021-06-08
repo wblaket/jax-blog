@@ -36,6 +36,8 @@
               method ="post"  enctype="multipart/form-data">
               <label for="upload">Choose your profile picture:</label>
               <input type="file" name="upload" />
+              <br />
+              <br />
               <input type="submit" name ="submit" value="Upload Profile Pic" class="editpagebutton" />
             </form>
 

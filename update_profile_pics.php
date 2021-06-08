@@ -48,7 +48,7 @@
       exit();
     } else {
       // else print error messages.
-       echo '<p>Your profile picture could not be uploaded.</p>';
+       echo '<p class="error">Your profile picture could not be uploaded.</p>';
       echo '<p>' . mysqli_error($dbc) . '<br /><br />Query: ' . $q. '</p>';
      }
      mysqli_close($dbc); // close database connection
@@ -56,7 +56,7 @@
     //print error messages
     echo '<h1>An error has occured</h1>';
     foreach ($errors as $msg) {
-        echo "Error - $msg<br />\n";
+        echo '<h1>Error - ' . $msg . '<br /></h1>';
       }
   }
 

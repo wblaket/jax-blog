@@ -8,9 +8,12 @@
 <?php
   session_start(); // Include session
   if (!isset($_SESSION['user_id'])) { // If there's no session running, redirect user to the login page.
+    echo"<h1>There's no session running</h1>";
     require ('includes/login_functions.inc.php');
     redirect_user();
   }
+
+  echo "<p>The value of session is " . isset($_SESSION['user_id']) . "</p>";
   // Insert the page header
   include ('includes/header.html');
 ?>

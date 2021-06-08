@@ -1,24 +1,11 @@
-/*
-Color pallet:
-
-#92374D - Solid Pink
-#8C5383 - Razzmic Berry
-#4A5899 - Liberty
-#559CAD - Pacific Blue
-#C1B2AB - Pale Silver
-#00BFFF - Deep Sky Blue
-#FAF0E6 - Linen
-#FDF5E6 - Oldlace
-
-*/
 
 /* Global Styles
 ----------------------------------------   */
 
 body {
-  background:#FAF0E6;
-  color:#C1B2AB;
-  font-size: 25px;
+  background:white;
+  color:white;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -28,16 +15,22 @@ body {
   color:white;
 }
 
+.error {
+  background-color: yellow;
+  padding-top: none;
+}
 
 p.error {
   font-size:30px;
-  color:#92374D;
+  color:#3B7D66;
   text-align: center;
 
 }
 
 h1 {
   text-align: center;
+  color:#3B7D66;
+  font-size:30px;
 }
 
 input[type='submit'], #update_bio_button {
@@ -50,16 +43,16 @@ input[type='submit'], #update_bio_button {
 
 
 .content-wrap {
-  /* max-width: 1000px; */
   max-width: 75%;
   margin: 0 auto;
 }
+
 
 /* Header Syles
 ---------------------------------------- */
 
 header {
-  background: #559CAD;
+  background: #3B7D66;
   color:#FAF0E6 ;
   padding:10px;
   height:auto;
@@ -70,6 +63,7 @@ header {
   text-align:center;
   margin-top:0;
   margin-bottom: 0;
+  color:white;
 
 }
 
@@ -107,11 +101,11 @@ header {
   text-decoration: none;
   font-size: 25px;
   padding:10px;
-  color:#E3D0D8;  /* Artichoke */
+  color:#E3D0D8;
 }
 
 #navbar a:hover {
-  color:#AEA3B0; /* Opal */
+  color:#AEA3B0;
 }
 
 #navbar a:active {
@@ -140,9 +134,18 @@ form {
   padding: 20px;
   width:50%;
   margin-top:30px;
+   background-color:#5E8C61;
+  align-items: center;
+}
+
+form .{
+  padding: 20px;
+  width:50%;
+  margin-top:30px;
   background-color:#92374D;
   align-items: center;
 }
+
 
 
 textarea {
@@ -189,7 +192,7 @@ textarea {
 /*  background:#FDF5E6;
   color:black;
   */
-  font-size:30px;
+  font-size:25px;
   text-align:left;
   line-height: 50px;
   /*
@@ -202,6 +205,7 @@ textarea {
 
 .blog_poster{
   text-align: left;
+  font-size:20px;
 }
 
 
@@ -227,15 +231,23 @@ img.profilepic {
 }
 
 #profile_info {
-  background: #559CAD;
+background-color:#5E8C61;
   color:#FAF0E6;
   padding-left: 20px;
+}
+
+.user_info {
+  font-size:20px;
 }
 
 
 #update_password {
   display: flex;
   flex-direction: column;
+}
+
+#update_password label {
+  font-size: 20px;
 }
 
 #bio_txt {
@@ -277,11 +289,15 @@ img.profilepic {
 
 
 .registration_container label {
-  font-size:40px;
+  font-size:25px;
   line-height: 0.5;
   margin-bottom: 10px;
+  text-align: center;
 }
 
+.registration_label {
+  text-align: center;
+}
 .registration_container input[type="text"], input[type="email"], input[type="password"] {
   width:250px;
   height:30px;
@@ -294,9 +310,17 @@ img.profilepic {
    margin-bottom: 10px;
  }
 
+#login_form {
+  padding: 20px;
+  width:50%;
+  margin-top:30px;
+  background-color:#92374D;
+  align-items: center;
+
+}
 
  #login_form label {
-   font-size:30px;
+   font-size:25px;
  }
 
  #login_form input[type="text"], input[type="password"] {
@@ -305,7 +329,8 @@ img.profilepic {
  }
 
  #login_button, #register_button {
-   float:left;
+   float:right;
+   font-size: 20px;
    margin-left: 10px;
    padding: 10px 20px;
    background:#00BFFF;
@@ -377,7 +402,7 @@ img.profilepic {
      column-gap: 0;
      grid-template-columns: 300px 1fr;
      justify-content: center;
-     background-color:#92374D;
+     background-color:#5E8C61;
      padding:30px;
      width:40%;
      margin-left: auto;
@@ -391,7 +416,7 @@ img.profilepic {
      justify-content: center;
      margin-left: auto;
      margin-right: auto;
-     background-color:#92374D;
+     background-color:#5E8C61;
      padding:30px;
      width: 40%;
    }

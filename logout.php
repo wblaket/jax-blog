@@ -5,7 +5,8 @@
 
 <?php
   session_start(); // Include session information
-  include ('includes\header.html'); // Print the page header
+  include ('includes/header.html'); // Include the page header
+
   // If there isn't already a login session, redirect user back to login page:
   if (!isset($_SESSION['user_id'])) {
     require ('includes/login_functions.inc.php');

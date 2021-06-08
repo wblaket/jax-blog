@@ -121,14 +121,14 @@
       // Print bio information:
       echo '<p><img class="profilepic" src="' . $imageFilePath . '"/> ' .
       //Display first and last name and username:
-      $user_fn . ' ' . $user_ln . '<span class=username> (' .  $user_id . ')</span>' .
-      '<p>' . $user_email . '</p>' .
-      '<p><i>e-mail</i></p>' .
+      '<span class="user_info"> ' . $user_fn . '</span><span class="user_info"> ' . $user_ln . '</span><span class="username"> (' .  $user_id . ')</span>' .
+      '<p class="user_info">' . $user_email . '</p>' .
+      '<p class="user_info"><i>e-mail</i></p>' .
       // display date of birth
-      '<p>' . $user_dob . '</p>' .
-      '<p><i>birthday</i></p><br />' .
+      '<p class="user_info">' . $user_dob . '</p>' .
+      '<p class="user_info"><i>birthday</i></p><br />' .
       // display bio information
-      '<p>' . $user_bio . '</p>';
+      '<p class="user_info">' . $user_bio . '</p>';
       }
     } else {
       // If the query couldn't run:

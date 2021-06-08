@@ -124,14 +124,16 @@ function loginUser(user_id, user_password) {
   ajaxRequest.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
 
-      if (this.responseText == "false") {
-        document.getElementById("confirmation").innerHTML = "<p class=\"error\">An error occured. Your username or password was incorrect.";
+      if (this.responseText == false) {
+        alert("Error: Username and/or password does not match our records.");
+        console.log(this.responseText);
       } else {
         document.getElementById("confirmation").innerHTML = "Login succesful!";
+        console.log(this.responseText);
       }
 
       if (document.getElementById("confirmation").innerHTML.toString() == "Login succesful!") {
-        window.location.replace('../jaxblog/home.php');
+        window.location.replace('../jax-blog/home.php');
       }
     }
   }

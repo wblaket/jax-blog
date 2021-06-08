@@ -4,8 +4,8 @@
 -->
 
 <?php
-
-  function redirect_user ($page = 'jaxblog/login.php') {
+  // Function that redirects the user back to the login page:
+  function redirect_user ($page = 'jax-blog/login.php') {
     $url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER)['PHP_SELF'];
     $url = rtrim($url, '/\\');
     $url .= '/' . $page;
@@ -14,7 +14,7 @@
   }
 
 
-  function check_login($dbc, $user_id = '', $password = '') {
+  function check_login($dbc, $user_id = '', $user_password = '') {
 
     $errors = array();
     if (empty($user_id)) {
@@ -23,10 +23,10 @@
       $u = mysqli_real_escape_string($dbc, trim($user_id));
     }
 
-    if (empty($password)) {
+    if (empty($user_password)) {
       $errors[] = 'You forgot to enter your password.';
     } else {
-      $p = mysqli_real_escape_string($dbc, trim($password));
+      $p = mysqli_real_escape_string($dbc, trim($user_password));
     }
 
     if (empty($errors)) {
@@ -36,7 +36,7 @@
       if (mysqli_num_rows($r) == 1) {
         $row = mysqli_fetch_array ($r, MYSQLI_ASSOC);
         return array(true, $row);
-        redirect_user('jaxblog/home.php');
+        redirect_user('jax-blog/home.php');
       } else {
         $errors[] = 'The user and/or password entered do not match those on file.';
       }
